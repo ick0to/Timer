@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <style>
+        p {
+            text-align: center;
+            font-size: 60px;
+        }
+        
+        body {
+            text-align: center;
+            background: #00ECB9;
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+    </style>
+    <title>Timer</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <form id="myForm">
+                <div class="col-xs-offset-3 col-xs-2">
+                    <input class="form-control" id="htmlHours" maxlength="2" type="number" placeholder="00">
+                </div>
+                <div class="col-xs-offset-0 col-xs-2">
+                    <input class="form-control" id="htmlMinutes" type="number" placeholder="00">
+                </div>
+                <div class="col-xs-offset-0 col-xs-2">
+                    <input class="form-control" id="htmlSeconds" type="number" placeholder="00">
+                </div>
+            </form>
+            <br/>
+            <br/>
+            <br/>
+
+            <div class="form-group">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button class="btn btn-success" onclick="startTimer()" id="start">Start</button>
+                    <button class="btn btn-danger" id="stop" disabled>Stop</button>
+                    <button class="btn btn-info" id="resset">Resset</button>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <p id="demo"></p>
+
+    <script src="js/Timer.js"></script>
+</body>
+
+</html>
